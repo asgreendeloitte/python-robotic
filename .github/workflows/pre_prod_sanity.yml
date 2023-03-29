@@ -1,0 +1,104 @@
+name: PreProd Sanity Pack
+run-name: PreProd Sanity Pack | ${{inputs.oneClickRunId}}
+on:
+  workflow_dispatch:
+    inputs:
+      oneClickRunId:
+        description: 'The run Id from OneClick within QA portal'
+        required: false
+        type: string
+
+jobs:
+  Setup:
+    uses: ./.github/workflows/aws_login.yml
+    with:
+      aws-region: eu-west-2
+    secrets:
+      aws-access-key-id: ${{ secrets.ACCESS_KEY_ID }}
+      aws-secret-access-key: ${{ secrets.SECRET_ACCESS_KEY }}
+
+  Test_execution:
+    runs-on: self-hosted
+    container:
+      image: 990750709598.dkr.ecr.eu-west-2.amazonaws.com/robotframework:2.0
+      volumes:
+        - /var/run/docker.sock:/var/run/docker.sock
+      credentials:
+        username: AWS
+        password: ${{ needs.Setup.outputs.aws-password }}
+    needs:
+      - Setup
+    steps:
+      - name: Checkout Local
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install requirements
+        run: pip install -r requirements.txt
+
+      - name: Run requirements
+        id: test-step
+        run: |
+          #!/bin/bash
+          mkdir test-results
+          Xvfb :10 -ac &
+          robot -x test-results.xml -T -d test-results -v ENV:preprod TestSuite/E2E/PreProd_SanityPack
+          exit_code=$?
+          tar -cvf result.tar test-results
+          exit "$exit_code"
+
+      - name: Create Artifact
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: Tests Results
+          path: test-results
+
+  QA_Portal_Results_Test_Failure:
+    runs-on: ubuntu-22.04
+    if: failure()
+    needs: 
+        - Setup
+        - Test_execution
+    outputs:
+      test-result: ${{steps.failure-results.outputs.test-result}}
+    steps:
+      - name: Test Failure
+        env:
+            API_TOKEN: ${{ secrets.QA_PORTAL_TOKEN }}
+        id: failure-results
+        run: |
+            echo 'test-result=2' >> $GITHUB_OUTPUT
+
+  QA_Portal_Results_Test_Success:
+    runs-on: ubuntu-22.04
+    if: success() 
+    needs: 
+        - Setup
+        - Test_execution
+    outputs:
+      test-result: ${{steps.success-results.outputs.test-result}}                    
+    steps:
+      - name: Test Success
+        env:
+            API_TOKEN: ${{ secrets.QA_PORTAL_TOKEN }}
+        id: success-results
+        run: |
+            echo 'test-result=1' >> $GITHUB_OUTPUT
+                    
+  Upload-test-results:
+    if: always()
+    needs:
+      - QA_Portal_Results_Test_Failure 
+      - QA_Portal_Results_Test_Success
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Upload test results
+        uses: publichealthengland/hpod-uksha-devops-templates/.github/actions/test-automation/upload-test-results@v2
+        with: 
+          test-id: ${{inputs.oneClickRunId}}
+          test-result: ${{needs.QA_Portal_Results_Test_Failure.outputs.test-result || needs.QA_Portal_Results_Test_Success.outputs.test-result}}
+          build-link: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          qat-portal-token: ${{secrets.QA_PORTAL_TOKEN}}

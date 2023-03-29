@@ -1,0 +1,599 @@
+[
+  {
+  "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/"
+},
+{
+  "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/topics"
+},
+{
+    "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/search"
+},
+{
+    "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/feedback"
+},
+{
+    "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/give-feedback"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/who-for"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/someone-else/their-details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/someone-else/relationship"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/myself/submitted"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/myself/submit-complaint"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/someone-else/submit-complaint"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/stay-at-home-support/enquiry/who-for"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/stay-at-home-support/enquiry/myself/details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/stay-at-home-support/enquiry/myself/contact-details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/stay-at-home-support/enquiry/myself/email-address"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/stay-at-home-support/enquiry/myself/check-your-answers"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/stay-at-home-support/enquiry/myself/submitted"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/stay-at-home-support/enquiry/someone-else/their-details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/stay-at-home-support/enquiry/someone-else/relationship"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/stay-at-home-support/enquiry/someone-else/details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/stay-at-home-support/enquiry/someone-else/contact-details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/stay-at-home-support/enquiry/someone-else/email-address"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/stay-at-home-support/enquiry/someone-else/check-your-answers"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/stay-at-home-support/enquiry/someone-else/submitted"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/national-guidance"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/get-a-test"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/home-test-kits"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/report-test-result"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/find-test-results"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/who-for"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/myself/which-test"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/myself/test-taken-date"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/myself/was-test-for-international-travel"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/myself/travel-test-provider"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/myself/what-is-test-barcode"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/myself/phone-number-used"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/myself/vaccination-status"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/myself/vaccination-status"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/myself/details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/myself/contact-details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/myself/email-address"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/myself/check-your-answers"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/myself/submitted"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/someone-else/their-details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/someone-else/relationship"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/someone-else/which-test"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/someone-else/test-taken-date"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/someone-else/was-test-for-international-travel"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/someone-else/travel-test-provider"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/someone-else/what-is-test-barcode"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/someone-else/phone-number-used"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/someone-else/vaccination-status"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/someone-else/details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/someone-else/contact-details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/someone-else/email-address"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/someone-else/check-your-answers"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-testing/enquiry/someone-else/submitted"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/who-for"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/myself/which-test"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/myself/was-test-for-international-travel"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/myself/travel-test-provider"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/myself/test-taken-date"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/myself/test-taken-date"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/myself/what-is-test-barcode"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/myself/phone-number-used"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/myself/date-of-birth"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/myself/home-address"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/myself/home-address/result"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/myself/home-address/manual"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/myself/vaccination-status"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/myself/details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/myself/contact-details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/myself/email-address"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/myself/check-your-answers"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/myself/submitted"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/someone-else/their-details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/someone-else/relationship"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/someone-else/which-test"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/someone-else/was-test-for-international-travel"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/someone-else/travel-test-provider"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/someone-else/test-taken-date"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/someone-else/what-is-test-barcode"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/someone-else/phone-number-used"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/someone-else/date-of-birth"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/someone-else/home-address"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/someone-else/home-address/result"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/someone-else/home-address/manual"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/someone-else/home-address/address-known"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/someone-else/vaccination-status"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/someone-else/details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/someone-else/contact-details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/someone-else/email-address"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/someone-else/check-your-answers"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/find-a-test-result/enquiry/someone-else/submitted"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/ptp/who-for"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/ptp/myself/which-test-complaint"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/ptp/myself/country-test-delivered-to"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/ptp/myself/type-travel-test-complaint"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/ptp/myself/private-test-provider-name"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/ptp/myself/private-test-provider-name/result"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/ptp/myself/private-test-provider-name/manual"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/ptp/myself/booking-reference"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/ptp/myself/main-reason-for-complaint"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/ptp/myself/submit-complaint"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/ptp/myself/submitted"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/ptp/someone-else/their-details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/ptp/someone-else/relationship"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/ptp/someone-else/which-test-complaint"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/ptp/someone-else/country-test-delivered-to"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/ptp/someone-else/type-travel-test-complaint"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/ptp/someone-else/private-test-provider-name"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/ptp/someone-else/private-test-provider-name/result"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/ptp/someone-else/private-test-provider-name/manual"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/ptp/someone-else/booking-reference"
+},
+{
+   "url":  "https://dhqa-dho.cs110.force.com/complaint/ptp/someone-else/main-reason-for-complaint"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/ptp/someone-else/submit-complaint"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/ptp/someone-else/submitted"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/complaint/ptp/contact-private-test-provider"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/red-list-countries-and-territories"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/travelling-abroad"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/who-for"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/myself/arrived-from-abroad"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/myself/arrived-from-red-list"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/myself/covid-19-quarantining-england"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/myself/test-taken-while-quarantining"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/myself/test-address-pincode"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/myself/test-address-find"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/myself/test-address-manual"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/myself/test-address-chosen"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/myself/test-hotel-address"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/myself/test-hotel-address-manual"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/myself/vaccination-status"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/myself/details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/myself/contact-details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/myself/email-address"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/myself/check-your-answers"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/myself/submitted"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/someone-else/their-details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/someone-else/relationship"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/someone-else/arrived-from-abroad"
+},
+{
+   "url":  "https://dhqa-dho.cs110.force.com/international-travel/enquiry/someone-else/arrived-from-red-list"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/someone-else/covid-19-quarantining-england"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/someone-else/test-taken-while-quarantining"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/someone-else/test-address-pincode"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/someone-else/test-address-find"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/someone-else/test-address-manual"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/someone-else/test-address-chosen"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/someone-else/test-hotel-address"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/someone-else/test-hotel-address-manual"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/someone-else/vaccination-status"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/someone-else/details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/someone-else/contact-details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/someone-else/email-address"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/someone-else/check-your-answers"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/international-travel/enquiry/someone-else/submitted"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-vaccinations"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-vaccinations/book-a-covid-19-vaccination"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-vaccinations/vaccine-guidance"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/covid-19-vaccinations/covid-pass"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/stay-at-home"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/stay-at-home/stay-at-home-guidance"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/stay-at-home/stay-at-home-support"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/workplace-org-care-home"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/workplace-org-care-home"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/workplace-org-care-home/testing-in-care-home"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/workplace-org-care-home/guidelines-org"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/workplace-org-care-home/enquiry/who-for"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/workplace-org-care-home/enquiry/myself/details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/workplace-org-care-home/enquiry/myself/contact-details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/workplace-org-care-home/enquiry/myself/email-address"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/workplace-org-care-home/enquiry/myself/check-your-answers"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/workplace-org-care-home/enquiry/myself/submitted"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/workplace-org-care-home/enquiry/someone-else/their-details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/workplace-org-care-home/enquiry/someone-else/relationship"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/workplace-org-care-home/enquiry/someone-else/details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/workplace-org-care-home/enquiry/someone-else/contact-details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/workplace-org-care-home/enquiry/someone-else/email-address"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/workplace-org-care-home/enquiry/someone-else/check-your-answers"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/workplace-org-care-home/enquiry/someone-else/submitted"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/close-contacts"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/close-contacts/enquiry/who-for"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/close-contacts/enquiry/myself/details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/close-contacts/enquiry/myself/contact-details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/close-contacts/enquiry/myself/email-address"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/close-contacts/enquiry/myself/check-your-answers"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/close-contacts/enquiry/myself/submitted"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/close-contacts/enquiry/someone-else/their-details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/close-contacts/enquiry/someone-else/relationship"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/close-contacts/enquiry/someone-else/details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/close-contacts/enquiry/someone-else/contact-details"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/close-contacts/enquiry/someone-else/email-address"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/close-contacts/enquiry/someone-else/check-your-answers"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/close-contacts/enquiry/someone-else/submitted"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/invalid-session"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/error"
+},
+{
+   "url":  "https://nhs--uat.sandbox.my.salesforce-sites.com/page-not-found"
+}
+]

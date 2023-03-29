@@ -1,0 +1,43 @@
+image:
+  name: bluewolfuk/robotframework:1.0
+  username: $MH_DOCKER_HUB_USERNAME
+  password: $MH_DOCKER_HUB_PASSWORD
+  email: $MH_DOCKER_HUB_EMAIL
+
+pipelines:
+  custom:
+    Regression_IATEST:
+      - step:
+          script:
+          - Xvfb :10 -ac &
+          - robot -v ENV:iatest -x zResult.xml -T -d Results Tests/Regression_Pack
+          artifacts:
+            - Results/*
+    Regression_UAT_1:
+      - step:
+          script:
+          - Xvfb :10 -ac &
+          - robot -v ENV:uat -x zResult.xml  -T -d Results Tests/Regression_Pack/LiveService/LiveService_1_US57toUS798
+          artifacts:
+            - Results/*
+    Regression_UAT_2:
+      - step:
+          script:
+          - Xvfb :10 -ac &
+          - robot -v ENV:uat -x zResult.xml -T -d Results Tests/Regression_Pack/LiveService/LiveService_2_US800Plus
+          artifacts:
+            - Results/*
+    Regression_UAT_IAC:
+      - step:
+          script:
+            - Xvfb :10 -ac &
+            - robot -v ENV:uat -x zResult.xml -T -d Results Tests/Regression_Pack/IAC
+          artifacts:
+            - Results/*
+    Regression_Preprod:
+      - step:
+          script:
+          - Xvfb :10 -ac &
+          - robot -v ENV:preprod -x zResult.xml -T -d Results Tests/Regression_Pack
+          artifacts:
+            - Results/*

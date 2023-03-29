@@ -1,0 +1,88 @@
+name: Custom Test Run
+on:
+  workflow_call:
+    inputs:
+      test-suit:
+        description: 'Path to test Suit folder or file'
+        required: true
+        type: string
+      aws-region:
+        required: true
+        type: string
+    secrets:
+      ACCESS_KEY_ID:
+        required: true
+      SECRET_ACCESS_KEY:
+        required: true
+
+  workflow_dispatch:
+    inputs:
+      test-suit: 
+        description: 'Path to test Suit folder or file'
+        required: true
+        type: string
+        default: TestSuite/E2E/DigitalOverhaul  
+
+jobs:
+  Setup:
+    uses: ./.github/workflows/aws_login.yml
+    with:
+      aws-region: eu-west-2
+    secrets:
+      aws-access-key-id: ${{ secrets.ACCESS_KEY_ID }}
+      aws-secret-access-key: ${{ secrets.SECRET_ACCESS_KEY }}
+
+  Test_Execution:
+    runs-on: self-hosted
+    container:
+      image: 990750709598.dkr.ecr.eu-west-2.amazonaws.com/robotframework:2.0
+      volumes:
+        - /var/run/docker.sock:/var/run/docker.sock
+      credentials:
+        username: AWS
+        password: ${{ needs.Setup.outputs.aws-password }}
+    needs: 
+      - Setup
+    steps:
+      - name: Checkout Local
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install requirements
+        run: | 
+          if [ -e ${{ inputs.test-suit }} ]; then
+            echo "${{ inputs.test-suit }} exits..."
+            pip install -r requirements.txt
+          else
+            echo "Error: ${{ inputs.test-suit }} not found. Can not continue."
+            exit 1
+          fi
+      # - name: Run Valgrind checks
+      #   id: valgrind
+      #   run: |
+      #     #!/bin/bash
+      #     Xvfb :10 -ac &
+      #     valgrind --leak-check=full robot ${{ inputs.test-suit }}
+      #     exit_code=$?
+      #     tar -cvf result.tar test-results
+      #     exit "$exit_code"
+
+      - name: Run requirements
+        id: test-step
+        run: |
+          #!/bin/bash
+          mkdir test-results
+          Xvfb :10 -ac &
+          robot -T -x test-results.xunit.xml -d test-results ${{ inputs.test-suit }}
+          exit_code=$?
+          tar -cvf result.tar test-results
+          exit "$exit_code"
+
+      - name: Create Artifact
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name:  Custom Tests Results #${{ inputs.test-suit }} no slash
+          path: test-results
+

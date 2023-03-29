@@ -1,0 +1,107 @@
+*** Settings ***
+Library  SeleniumLibrary    implicit_wait=15
+
+# Setup
+Resource     ${EXECDIR}/Resources/DHOverhaulSetupAndEnvLogins.robot
+
+# DigitalOverhaul Pages
+Resource     ${EXECDIR}/Resources/DigitalOverhaul/Flows/GenerateDHOverhaulForm.robot
+Resource     ${EXECDIR}/Resources/DigitalOverhaul/Pages/globalElements.robot
+Resource     ${EXECDIR}/Resources/DigitalOverhaul/Pages/startPage.robot
+Resource     ${EXECDIR}/Resources/DigitalOverhaul/Pages/footer.robot
+
+
+Suite Setup     Open Browser, Go To Digital Overhaul and Accept Cookies
+Suite Teardown  Close Browser
+
+*** Test Cases ***
+
+Digital Helper Overhaul - Maintenance page
+    [Tags]      TTCS20-4156-01
+    # Pre-requisite: As admin go to Setup -> Sites -> Edit DH -> Active = true
+    Go To Digital Overhaul
+    page should contain     Sorry, the service is unavailable
+    page should contain     You will be able to use the service later.
+    page should contain     We have not saved your answers. When the service is available, you will have to start again.
+    page should contain     Telephone 119 for help with NHS Test and Trace related enquiries or complaints.
+    page should contain     Opening times:
+    page should contain     8am to 6pm, Monday to Friday
+    page should contain     9am to 1pm, Saturday and Sunday
+    page should contain     Accessibility statement
+    page should contain     Cookies
+    page should contain     Privacy policy
+
+Digital Helper Overhaul - Maintenance page- Covid-19 Testing
+    [Tags]      TTCS20-4156-02
+    # Pre-requisite: As admin go to Setup -> Sites -> Edit DH -> Active = true
+    Go to Digital Overhaul Covid-19 Testing
+    page should contain     Sorry, the service is unavailable
+    page should contain     You will be able to use the service later.
+    page should contain     We have not saved your answers. When the service is available, you will have to start again.
+    page should contain     Telephone 119 for help with NHS Test and Trace related enquiries or complaints.
+    page should contain     Opening times:
+    page should contain     8am to 6pm, Monday to Friday
+    page should contain     9am to 1pm, Saturday and Sunday
+    page should contain     Accessibility statement
+    page should contain     Cookies
+    page should contain     Privacy policy
+
+Digital Helper Overhaul - Maintenance page- Accessibility Statement
+    [Tags]      TTCS20-4156-03
+    # Pre-requisite: As admin go to Setup -> Sites -> Edit DH -> Active = true
+    Go to Digital Overhaul Accessibility Statement
+    page should contain     Sorry, the service is unavailable
+    page should contain     You will be able to use the service later.
+    page should contain     We have not saved your answers. When the service is available, you will have to start again.
+    page should contain     Telephone 119 for help with NHS Test and Trace related enquiries or complaints.
+    page should contain     Opening times:
+    page should contain     8am to 6pm, Monday to Friday
+    page should contain     9am to 1pm, Saturday and Sunday
+    page should contain     Accessibility statement
+    page should contain     Cookies
+    page should contain     Privacy policy
+
+Digital Helper Overhaul - Maintenance page- All Topics
+    [Tags]      TTCS20-4156-04
+    # Pre-requisite: As admin go to Setup -> Sites -> Edit DH -> Active = true
+    Go to Digital Overhaul All Topics
+    page should contain     Sorry, the service is unavailable
+    page should contain     You will be able to use the service later.
+    page should contain     We have not saved your answers. When the service is available, you will have to start again.
+    page should contain     Telephone 119 for help with NHS Test and Trace related enquiries or complaints.
+    page should contain     Opening times:
+    page should contain     8am to 6pm, Monday to Friday
+    page should contain     9am to 1pm, Saturday and Sunday
+    page should contain     Accessibility statement
+    page should contain     Cookies
+    page should contain     Privacy policy
+
+Digital Helper Overhaul - Maintenance page- Travelling Abroad During COVID-19
+    [Tags]      TTCS20-4156-05
+    # Pre-requisite: As admin go to Setup -> Sites -> Edit DH -> Active = true
+    Go to Digital Overhaul Travelling Abroad During COVID-19
+    page should contain     Sorry, the service is unavailable
+    page should contain     You will be able to use the service later.
+    page should contain     We have not saved your answers. When the service is available, you will have to start again.
+    page should contain     Telephone 119 for help with NHS Test and Trace related enquiries or complaints.
+    page should contain     Opening times:
+    page should contain     8am to 6pm, Monday to Friday
+    page should contain     9am to 1pm, Saturday and Sunday
+    page should contain     Accessibility statement
+    page should contain     Cookies
+    page should contain     Privacy policy
+
+Digital Helper Overhaul - Maintenance page- Close Contacts
+    [Tags]      TTCS20-4156-06
+    # Pre-requisite: As admin go to Setup -> Sites -> Edit DH -> Active = true
+    Go to Digital Overhaul Close Contacts
+    page should contain     Sorry, the service is unavailable
+    page should contain     You will be able to use the service later.
+    page should contain     We have not saved your answers. When the service is available, you will have to start again.
+    page should contain     Telephone 119 for help with NHS Test and Trace related enquiries or complaints.
+    page should contain     Opening times:
+    page should contain     8am to 6pm, Monday to Friday
+    page should contain     9am to 1pm, Saturday and Sunday
+    page should contain     Accessibility statement
+    page should contain     Cookies
+    page should contain     Privacy policy

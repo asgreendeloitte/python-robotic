@@ -1,0 +1,31 @@
+name: AWS Login
+on:
+  workflow_call:
+    inputs:
+      aws-region:
+        required: true
+        type: string
+    secrets:
+      aws-access-key-id:
+        required: true
+      aws-secret-access-key:
+        required: true
+    outputs:
+      aws-password:
+        value: ${{ jobs.AWS-Login.outputs.job-output }}
+        
+jobs:
+  AWS-Login:
+    runs-on: ubuntu-20.04
+    outputs:
+      job-output: ${{ steps.aws-step.outputs.aws-password }}
+    steps:
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.aws-access-key-id }}
+          aws-secret-access-key: ${{ secrets.aws-secret-access-key }}
+          aws-region: ${{ inputs.aws-region }}
+      - name: Get AWS password
+        id: aws-step
+        run: echo "::set-output name=aws-password::$(aws ecr get-login-password --region ${{ inputs.aws-region }})" 

@@ -1,0 +1,76 @@
+name: HPEP Test Automation PreProd
+on:
+  workflow_dispatch:
+    inputs:
+      oneClickRunId:
+        description: 'The run Id from OneClick within QA portal'
+        required: false
+        type: string
+
+jobs:
+  Setup:
+    uses: ./.github/workflows/aws_login.yml
+    with:
+      aws-region: eu-west-2
+    secrets:
+      aws-access-key-id: ${{ secrets.ACCESS_KEY_ID }}
+      aws-secret-access-key: ${{ secrets.SECRET_ACCESS_KEY }}
+
+  my-test-job:
+    runs-on: self-hosted
+    container:
+      image: 990750709598.dkr.ecr.eu-west-2.amazonaws.com/robotframework:2.0
+      volumes:
+        - /var/run/docker.sock:/var/run/docker.sock
+      credentials:
+        username: AWS
+        password: ${{ needs.Setup.outputs.aws-password }}
+    needs:
+      - Setup
+    steps:
+      - name: Checkout Local
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install requirements
+        run: pip install -r requirements.txt
+
+      - name: Run requirements
+        id: test-step
+        run: |
+          #!/bin/bash
+          mkdir test-results
+          Xvfb :10 -ac &
+          robot -T -x test-results.xunit.xml -T -d test-results -v ENV:preprod TestSuite/E2E/HPEP
+          exit_code=$?
+          tar -cvf result.tar test-results
+          exit "$exit_code"
+
+      - name: Create Artifact
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: Tests Results
+          path: test-results
+
+      - name: Send Test Result to QA Portal
+        if: always()
+        env:
+            API_TOKEN: ${{ secrets.QA_PORTAL_TOKEN }}
+        run: |
+          echo "Result of tests was '${{ steps.test-step.outcome }}'"
+          echo "Sending results to QA Portal..."
+
+          SUCCESS=1
+          FAIL=2
+          SCRIPT='./.github/utility-scripts/update_test_result.py'
+          chmod +x "$SCRIPT"
+
+          if ${{ steps.test-step.outcome != 'success' }}; then
+            python $SCRIPT ${{ env.API_TOKEN }} $FAIL ${{ inputs.oneClickRunId }}
+          else
+            python $SCRIPT ${{ env.API_TOKEN }} $SUCCESS ${{ inputs.oneClickRunId }}
+          fi
+          
